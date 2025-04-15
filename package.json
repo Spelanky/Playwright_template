@@ -4,19 +4,29 @@
   "description": "Template for new projects",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
-  },
-  "repository": {
-    "type": "git",
-    "url": "git+https://github.com/Spelanky/Playwright_template.git"
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "build": "tsc",
+    "lint": "eslint .",
+    "lint:fix": "eslint . --fix",
+    "format": "prettier --config .prettierrc src/**/*.ts --check src/",
+    "format:fix": "prettier --config .prettierrc src/**/*.ts --write src/",
+    "prepare": "husky",
+    "lint-check": "npm run lint && npm run format"
   },
   "author": "Mitka",
   "license": "ISC",
-  "bugs": {
-    "url": "https://github.com/Spelanky/Playwright_template/issues"
-  },
-  "homepage": "https://github.com/Spelanky/Playwright_template#readme",
   "devDependencies": {
-    "typescript": "^5.8.3"
+    "@eslint/js": "^9.24.0",
+    "@types/lodash": "^4.17.16",
+    "eslint": "^9.24.0",
+    "eslint-config-prettier": "^10.1.2",
+    "eslint-plugin-prettier": "^5.2.6",
+    "globals": "^16.0.0",
+    "prettier": "^3.5.3",
+    "typescript": "^5.8.3",
+    "typescript-eslint": "^8.30.1"
+  },
+  "dependencies": {
+    "lodash": "^4.17.21"
   }
 }
