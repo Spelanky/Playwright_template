@@ -1,4 +1,4 @@
-# Playwright_template
+# Project_template
 Template for new projects
 installed:
 - eslint
