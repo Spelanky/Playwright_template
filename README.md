@@ -10,7 +10,7 @@ installed:
 PW need to be installed:
 npm init playwright@latest
 
-Выбираем:
+Choose:
 - TypeScript
 - src/ui/tests
 - false
